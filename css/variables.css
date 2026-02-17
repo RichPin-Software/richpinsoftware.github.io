@@ -1,0 +1,28 @@
+/*
+  Author: Richard Pinegar | Rich Pin Software
+  Date: February 2026
+  Site Info: Rich Pin Software Official Website
+  Content: CSS Variables
+*/
+
+:root {
+	/* Colors */
+	--primary-color: rgb(0, 8, 20);
+	--primary-alt-color: rgb(0, 29, 61);
+	--bg-color: rgb(255, 255, 255);
+	--bg-alt-color: rgb(0, 53, 102);
+	--secondary-color: rgb(255, 195, 0);
+	--secondary-alt-color: rgb(255, 214, 10);
+	--primary-text-color: rgb(0, 0, 0);
+	--secondary-text-color: var(--secondary-color);
+	/* Font */
+	--primary-font: "Coda", system-ui;
+	--primary-font-weight: 400;
+	--primary-font-style: normal;
+	/* Layout */
+	--content-width: 100%;
+	--header-height: 100px;
+	--footer-height: 150px;
+  --padding: 10px;
+	--main-padding: calc(var(--header-height) + 20px) var(--padding) calc(var(--footer-height) + 20px) var(--padding);
+}

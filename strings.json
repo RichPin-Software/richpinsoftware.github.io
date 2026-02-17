@@ -1,0 +1,26 @@
+{
+  "header": {
+    "logo": "RPS",
+    "title": "Rich Pin Software"
+  },
+  "hero": {
+    "title": "Rich Pin Software",
+    "subtitle": "Professional Web & Software Solutions"
+  },
+  "services": {
+    "web": {
+      "description": "Custom Website Development",
+      "types": [
+        "Business",
+        "Personal",
+        "Band",
+        "Artist"
+      ]
+    },
+    "software": "Software development services"
+  },
+  "footer": {
+    "copyright": "© 2026 Rich Pin Software. All rights reserved.",
+    "email": "rich.pinegar@gmail.com"
+  }
+}
