@@ -1,0 +1,21 @@
+/*
+  Copyright (c) 2026 Rich Pin Software. All rights reserved.
+
+  Content: Layout Styles
+*/
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header, footer, main {
+  display: grid;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: var(--max-width-wrapper);
+  margin-inline: auto;
+  align-items: center;
+}

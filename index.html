@@ -1,60 +1,44 @@
-<!doctype html>
+<!--
+  * Copyright (c) 2026 Rich Pin Software. All rights reserved.
+  *
+  * Author: Richard Pinegar | Rich Pin Software
+  * URL: https://richpinsoftware.com
+  * Date: April 2026
+  * Version: 1.0
+  * Site Info: Rich Pin Software Official Website
+  * Content: Main HTML File
+-->
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Rich Pin Software</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Coda:wght@400;800&display=swap">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/style.css" />
+  <link rel="stylesheet" href="/assets/css/global.css">
+  <link rel="stylesheet" href="/assets/css/fonts.css">
+  <link rel="stylesheet" href="/assets/css/layout.css">
+  <link rel="stylesheet" href="/assets/css/theme.css">
+  <link rel="stylesheet" href="/assets/css/state.css">
 </head>
 <body>
   <header>
-    <div id="company-info">
-      <img src="richpinsoftware-enhanced.webp" alt="Rich Pin Software Logo" id="company-logo" style="width: 65px" />
-      <!-- <h1 id="header-logo"></h1>
-      <h5 id="header-title"></h5> -->
-    </div>
-    <div id="hamburger-menu">
-      <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
-      <div id="hamburger-dropdown">
-        <nav>
-          <ul>
-            <li><a href="#" onclick="closeMenu()">Home</a></li>
-            <li><a href="#services" onclick="closeMenu()">Services</a></li>
-            <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+    <div class="wrapper">
+      <a href="#">
+        <h1>Rich Pin Software</h1>
+      </a>
     </div>
   </header>
-
   <main>
-    <section id="home">
-      <!-- <img src="richpinsoftware-logo.webp" alt="Rich Pin Software Logo" id="company-logo" /> -->
-      <img src="richpinsoftware-enhanced.webp" alt="Rich Pin Software Logo" id="company-logo" style="width: 75px" />
-    </section>
-    <section id="services">
-      <h2>Services</h2>
-      <article id="webService">
-        <h3>Web</h3>
-        <p id="webServiceDescription"></p>
-        <ul id="webServiceTypes"></ul>
-      </article>
+    <div class="wrapper">
 
-      <article id="softwareServiceWrapper">
-        <h3>Software</h3>
-        <p id="softwareService"></p>
-      </article>
-    </section>
+    </div>
   </main>
-
   <footer>
-    <p id="copyright"></p>
+    <div class="wrapper">
+      <p><small>&copy; 2026 Rich Pin Software. All rights reserved.</small></p>
+    </div>
   </footer>
-
-  <!-- Update src if your JS file is in a different location -->
-  <script src="js/strings.js" defer></script>
-  <script src="js/main.js" defer></script>
 </body>
 </html>
