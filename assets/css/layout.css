@@ -6,6 +6,7 @@
 
 body {
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr auto;
 }
 
@@ -19,6 +20,10 @@ header {
     align-items: center;
     justify-content: space-between;
   }
+
+  & svg:last-child {
+    display: none;
+  }
 }
 
 footer {
@@ -28,6 +33,11 @@ footer {
   }
 }
 
-.wrapper {
-  margin-inline: auto;
+main {
+  grid-template-columns: 1fr auto;
+
+  & .nav-links {
+    display: flex;
+    flex-direction: column;
+  }
 }

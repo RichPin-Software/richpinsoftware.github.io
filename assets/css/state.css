@@ -4,6 +4,23 @@
   Content: Active, Hover and Focus States
 */
 
-.nav-links {
-  display: none;
+body.nav-open {
+  & header {
+    & svg:first-child {
+      display: none;
+    }
+    & svg:last-child {
+      display: block;
+    }
+  }
+
+  & main .nav-links {
+    color: var(--color-light);
+    width: 35vw;
+
+    & li:hover {
+      background-color: var(--color-shade);
+      cursor: pointer;
+    }
+  }
 }

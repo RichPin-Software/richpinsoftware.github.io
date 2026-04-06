@@ -26,7 +26,7 @@ html {
 
 body { 
   line-height: 1.5;
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 img, picture, video, svg {

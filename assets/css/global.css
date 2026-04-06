@@ -8,8 +8,8 @@
   /**********************
     Site Dimensions
   **********************/
-  --header-height: 10vh;
-  --footer-height: 20vh;
+  --header-height: 150px;
+  --footer-height: 250px;
   --max-width-wrapper: 1600px;
   /**********************
     Spacing
@@ -35,7 +35,7 @@
   /**********************
     Font Weights
   **********************/
-  --font-weight-regualar: 400;
+  --font-weight-regular: 400;
   --font-weight-medium: 500;
   --font-weight-bold: 700;
   /**********************
