@@ -17,6 +17,11 @@ header {
   background-color: var(--color-dark);
   height: var(--header-height);
   border-bottom: 1px solid var(--color-shade);
+
+  & svg {
+    height: calc(var(--header-height) / 2);
+    fill: var(--color-light);
+  }
 }
 
 footer {
@@ -26,5 +31,7 @@ footer {
 }
 
 .wrapper {
+  padding: 0 var(--space-s);
   max-width: var(--max-width-wrapper);
+  width: 100%;
 }

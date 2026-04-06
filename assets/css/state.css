@@ -3,3 +3,7 @@
 
   Content: Active, Hover and Focus States
 */
+
+.nav-links {
+  display: none;
+}

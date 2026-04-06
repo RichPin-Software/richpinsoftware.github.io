@@ -8,8 +8,8 @@
   /**********************
     Site Dimensions
   **********************/
-  --header-height: 150px;
-  --footer-height: 250px;
+  --header-height: 10vh;
+  --footer-height: 20vh;
   --max-width-wrapper: 1600px;
   /**********************
     Spacing
@@ -22,11 +22,11 @@
   /**********************
     Font Sizes
   **********************/
-  --font-size-xl: 2.75rem;
+  --font-size-xl: max(2vw, 1.5rem);
   --font-size-l: 2.0rem;
   --font-size-m: 1.5rem;
   --font-size-s: 1.1rem;
-  --font-size-xs: 0.9rem;
+  --font-size-xs: max(0.6vw, 0.9rem);
   /**********************
     Font Families
   **********************/

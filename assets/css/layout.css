@@ -13,9 +13,21 @@ header, footer, main {
   display: grid;
 }
 
+header {
+  & .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+footer {
+  & .wrapper {
+    display: flex;
+    align-items: center;
+  }
+}
+
 .wrapper {
-  display: grid;
-  grid-template-columns: var(--max-width-wrapper);
   margin-inline: auto;
-  align-items: center;
 }

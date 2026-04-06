@@ -37,6 +37,7 @@ img, picture, video, svg {
 button {
   cursor: pointer;
   background: none;
+  border: none;
 }
 
 a {
