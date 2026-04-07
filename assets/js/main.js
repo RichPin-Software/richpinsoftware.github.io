@@ -6,30 +6,72 @@
 */
 
 const body = document.body;
+const navElement = document.querySelector('nav');
 const navButton = document.querySelector('.nav-button');
 
-// Toggle Navigation Menu
+/**
+ * Navigation Menu Functionality
+ * - Opens on hover/focus, closes on mouse leave
+ * - Toggles on click for mobile
+ * - Closes on outside click, Escape key, and scroll
+ */
+
+let closeTimer = null;
+
+function openNavigation() {
+  clearTimeout(closeTimer);
+  body.classList.add('nav-open');
+  navButton.setAttribute('aria-expanded', true);
+}
+
+function closeNavigation() {
+  body.classList.remove('nav-open');
+  navButton.setAttribute('aria-expanded', false);
+}
+
+function scheduleClose() {
+  closeTimer = setTimeout(closeNavigation, 500); // Delay to allow for mouse movement
+}
+
 if (navButton) {
+
+  navButton.addEventListener('mouseenter', openNavigation);
+  navButton.addEventListener('mouseleave', scheduleClose);
+  navButton.addEventListener('focus', openNavigation);
+  navElement.addEventListener('mouseenter', () => clearTimeout(closeTimer));
+  navElement.addEventListener('mouseleave', closeNavigation);
+
+  // Toggle navigation on button click (for mobile)
   navButton.addEventListener('click', function() {
-    body.classList.toggle('nav-open');
-    navButton.setAttribute('aria-expanded', body.classList.contains('nav-open'));
+    body.classList.contains('nav-open') ? closeNavigation() : openNavigation();
   });
 
+  // Close navigation on outside click
   document.addEventListener('click', function(e) {
-    const navOpen = body.classList.contains('nav-open');
-    const navButtonClicked = e.target.closest('nav, .nav-button');
+    var navOpen = body.classList.contains('nav-open');
+    var navButtonClicked = e.target.closest('nav, .nav-button');
 
     if (navOpen && !navButtonClicked) {
-      body.classList.remove('nav-open');
-      navButton.setAttribute('aria-expanded', false);
+      closeNavigation();
     }
   });
 
+  // Close navigation on Escape key
   document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && body.classList.contains('nav-open')) {
-      body.classList.remove('nav-open');
-      navButton.setAttribute('aria-expanded', false);
+    var navOpen = body.classList.contains('nav-open');
+
+    if (e.key === 'Escape' && navOpen) {
+      closeNavigation();
       navButton.focus(); // return focus to the button
     }
   });
+
+  // Close navigation on scroll
+  window.addEventListener('scroll', function() {
+    var navOpen = body.classList.contains('nav-open');
+
+    if (navOpen) {
+      closeNavigation();
+    }
+  }, { passive: true });
 }
