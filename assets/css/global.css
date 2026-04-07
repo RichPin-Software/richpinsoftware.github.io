@@ -1,0 +1,55 @@
+/*
+  Copyright (c) 2026 Rich Pin Software. All rights reserved.
+
+  Content: Global Variables
+*/
+
+:root {
+  /**********************
+    Site Dimensions
+  **********************/
+  --header-height: 150px;
+  --footer-height: 200px;
+  --max-width-wrapper: 1600px;
+  /**********************
+    Spacing
+  **********************/
+  --space-xl: 3.0rem;
+  --space-l: 2.0rem;
+  --space-m: 1.5rem;
+  --space-s: 1.0rem;
+  --space-xs: 0.5rem;
+  /**********************
+    Font Sizes
+  **********************/
+  --font-size-l: max(2vw, 1.75rem);
+  --font-size-m: max(0.9vw, 1.15rem);
+  --font-size-s: 1.1rem;
+  --font-size-xs: max(0.75vw, 0.9rem);
+  /**********************
+    Font Families
+  **********************/
+  --font-family-ubuntu: 'Ubuntu', sans-serif;
+  --font-family-roboto-mono: 'Roboto Mono', monospace;
+  /**********************
+    Font Weights
+  **********************/
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+  /**********************
+    Color Pallete
+  **********************/
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-dark: rgb(0, 0, 0);
+  --color-light: rgb(255, 255, 255);
+  --color-shade: rgb(100, 100, 100);
+}
+
+@media (max-width: 768px), (max-height: 500px) {
+  :root {
+    --header-height: 100px;
+    --footer-height: 150px;
+  }
+}
