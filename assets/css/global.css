@@ -9,7 +9,7 @@
     Site Dimensions
   **********************/
   --header-height: 150px;
-  --footer-height: 250px;
+  --footer-height: 200px;
   --max-width-wrapper: 1600px;
   /**********************
     Spacing
@@ -22,11 +22,10 @@
   /**********************
     Font Sizes
   **********************/
-  --font-size-xl: max(2vw, 1.5rem);
-  --font-size-l: 2.0rem;
-  --font-size-m: 1.5rem;
+  --font-size-l: max(2vw, 1.75rem);
+  --font-size-m: max(0.9vw, 1.15rem);
   --font-size-s: 1.1rem;
-  --font-size-xs: max(0.6vw, 0.9rem);
+  --font-size-xs: max(0.75vw, 0.9rem);
   /**********************
     Font Families
   **********************/
@@ -46,4 +45,11 @@
   --color-dark: rgb(0, 0, 0);
   --color-light: rgb(255, 255, 255);
   --color-shade: rgb(100, 100, 100);
+}
+
+@media (max-width: 768px), (max-height: 500px) {
+  :root {
+    --header-height: 100px;
+    --footer-height: 150px;
+  }
 }

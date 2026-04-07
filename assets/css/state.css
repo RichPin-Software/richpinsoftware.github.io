@@ -15,12 +15,20 @@ body.nav-open {
   }
 
   & main .nav-links {
+    position: relative;
+    z-index: 1000;
     color: var(--color-light);
-    width: 35vw;
+    width: 40vw;
 
     & li:hover {
       background-color: var(--color-shade);
       cursor: pointer;
+    }
+  }
+
+  @media (max-width: 500px) {
+    & main .nav-links {
+      width: 60vw;
     }
   }
 }

@@ -14,6 +14,9 @@ body {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   background-color: var(--color-dark);
   height: var(--header-height);
   border-bottom: 1px solid var(--color-shade);
@@ -33,7 +36,7 @@ footer {
 main {
   & .nav-links {
     background-color: var(--color-dark);
-    box-shadow: 0 4px 4px 1px rgb(34, 50, 56);
+    border-left: 1px solid rgb(34, 50, 56);
     color: var(--color-dark);
     text-wrap: nowrap;
     overflow: hidden;
