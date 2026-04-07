@@ -12,7 +12,7 @@ const navButton = document.querySelector('.nav-button');
 if (navButton) {
   navButton.addEventListener('click', function() {
     body.classList.toggle('nav-open');
-    navButton.setAttribute('aria-expanded', true);
+    navButton.setAttribute('aria-expanded', body.classList.contains('nav-open'));
   });
 
   document.addEventListener('click', function(e) {
