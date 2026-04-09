@@ -14,45 +14,32 @@ body {
 }
 
 header {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   background-color: var(--color-dark);
-  height: var(--header-height);
   border-bottom: 1px solid var(--color-shade);
 
   & svg {
-    height: calc(var(--header-height) / 2);
     fill: var(--color-light);
   }
 }
 
 footer {
   background-color: var(--color-dark);
-  height: var(--footer-height);
   border-top: 1px solid var(--color-shade);
 }
 
 main {
   & .nav-links {
     background-color: var(--color-dark);
-    border-left: 1px solid rgb(34, 50, 56);
+    border-left: 1px solid var(--color-secondary-dark);
     color: var(--color-dark);
     text-wrap: nowrap;
     overflow: hidden;
     transition: width 500ms ease-in-out, color 300ms ease-in-out;
-    width: 0;
-    height: 100%;
-
-    & li {
-      padding: var(--space-m);
-    }
   }
 }
 
-.wrapper {
-  margin-inline: auto;
-  padding: 0 var(--space-s);
-  max-width: var(--max-width-wrapper);
-  width: 100%;
+.card {
+  background-color: var(--color-dark);
+  border: 1px solid var(--color-secondary-dark);
+  text-wrap: balance;
 }

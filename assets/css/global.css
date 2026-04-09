@@ -23,8 +23,8 @@
     Font Sizes
   **********************/
   --font-size-l: max(2vw, 1.75rem);
-  --font-size-m: max(0.9vw, 1.15rem);
-  --font-size-s: 1.1rem;
+  --font-size-m: max(1.1vw, 1.25rem);
+  --font-size-s: max(0.85vw, 1.1rem);
   --font-size-xs: max(0.75vw, 0.9rem);
   /**********************
     Font Families
@@ -43,6 +43,7 @@
   --color-primary: #007bff;
   --color-secondary: #6c757d;
   --color-dark: rgb(0, 0, 0);
+  --color-secondary-dark: rgb(34, 50, 56);
   --color-light: rgb(255, 255, 255);
   --color-shade: rgb(100, 100, 100);
 }

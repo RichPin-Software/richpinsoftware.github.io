@@ -15,10 +15,19 @@ header, footer, main {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+
   & .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  & svg {
+    height: calc(var(--header-height) / 2);
   }
 
   & svg:last-child {
@@ -27,6 +36,8 @@ header {
 }
 
 footer {
+  height: var(--footer-height);
+  
   & .wrapper {
     display: flex;
     align-items: center;
@@ -39,5 +50,39 @@ main {
   & .nav-links {
     display: flex;
     flex-direction: column;
+    width: 0;
+    height: 100%;
+
+    & li {
+      padding: var(--space-m);
+    }
   }
+
+  & .wrapper {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  & .card-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(auto-fit, auto);
+    gap: var(--space-m);
+    margin: var(--space-l) 0;
+    height: fit-content;
+  }
+
+  & .card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: var(--space-m);
+    padding: var(--space-m);
+  }
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding: 0 var(--space-s);
+  max-width: var(--max-width-wrapper);
+  width: 100%;
 }
