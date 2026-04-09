@@ -29,6 +29,11 @@ header {
 footer {
   background-color: var(--color-dark);
   border-top: 1px solid var(--color-secondary-dark);
+
+  & svg {
+    display: inline;
+    fill: var(--color-light);
+  }
 }
 
 main {
@@ -49,7 +54,6 @@ main {
 
   & svg {
     fill: var(--color-light);
-    width: var(--font-size-l);
   }
 
   & p {

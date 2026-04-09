@@ -41,6 +41,17 @@ footer {
   & .wrapper {
     display: flex;
     align-items: center;
+
+    & p {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: var(--space-xs);
+    }
+
+    & svg {
+      width: var(--font-size-xs);
+    }
   }
 }
 
@@ -90,6 +101,7 @@ main {
       display: inline;
       grid-area: icon;
       align-self: center;
+      width: var(--font-size-l);
     }
 
     & h3 {
