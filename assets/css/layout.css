@@ -70,13 +70,37 @@ main {
     gap: var(--space-m);
     margin: var(--space-l) 0;
     height: fit-content;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   & .card {
     display: grid;
+    grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
+    grid-template-areas:
+    'icon heading'
+    'content content';
     gap: var(--space-m);
     padding: var(--space-m);
+
+    & svg {
+      display: inline;
+      grid-area: icon;
+      align-self: center;
+    }
+
+    & h3 {
+      grid-area: heading;
+      align-self: center;
+    }
+
+    & p {
+      grid-area: content;
+      padding: var(--space-s);
+    }
   }
 }
 

@@ -15,7 +15,11 @@ body {
 
 header {
   background-color: var(--color-dark);
-  border-bottom: 1px solid var(--color-shade);
+  border-bottom: 1px solid var(--color-secondary-dark);
+
+  & h1 {
+    color: var(--color-primary);
+  }
 
   & svg {
     fill: var(--color-light);
@@ -24,7 +28,7 @@ header {
 
 footer {
   background-color: var(--color-dark);
-  border-top: 1px solid var(--color-shade);
+  border-top: 1px solid var(--color-secondary-dark);
 }
 
 main {
@@ -39,7 +43,16 @@ main {
 }
 
 .card {
-  background-color: var(--color-dark);
-  border: 1px solid var(--color-secondary-dark);
+  background-color: var(--color-secondary-dark);
+  border-radius: 5px;
   text-wrap: balance;
+
+  & svg {
+    fill: var(--color-light);
+    width: var(--font-size-l);
+  }
+
+  & p {
+    background-color: var(--color-dark);
+  }
 }

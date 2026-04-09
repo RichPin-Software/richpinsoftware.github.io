@@ -40,7 +40,7 @@
   /**********************
     Color Pallete
   **********************/
-  --color-primary: #007bff;
+  --color-primary: rgb(64, 157, 239);
   --color-secondary: #6c757d;
   --color-dark: rgb(0, 0, 0);
   --color-secondary-dark: rgb(34, 50, 56);
