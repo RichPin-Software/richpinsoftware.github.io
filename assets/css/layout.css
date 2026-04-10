@@ -33,6 +33,8 @@ header {
 }
 
 footer {
+  position: relative;
+  z-index: 1000;
   height: var(--footer-height);
   
   & .wrapper {
@@ -72,7 +74,15 @@ footer {
 }
 
 main {
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
+
+  & nav {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    height: 100%;
+    z-index: 1000;
+  }
 
   & .nav-links {
     display: flex;

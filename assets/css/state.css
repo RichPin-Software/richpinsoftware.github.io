@@ -15,8 +15,6 @@ body.nav-open {
   }
 
   & main .nav-links {
-    position: relative;
-    z-index: 1000;
     color: var(--color-light);
     width: 40vw;
 
