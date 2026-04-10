@@ -61,10 +61,21 @@ h1 {
   font-size: var(--font-size-l);
 }
 
+h3 {
+  font-family: var(--font-family-ubuntu);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-m);
+}
+
+p {
+  font-size: var(--font-size-s);
+}
+
 small {
   font-size: var(--font-size-xs);
 }
 
 li {
+  font-weight: var(--font-weight-bold);
   font-size: var(--font-size-m);
 }

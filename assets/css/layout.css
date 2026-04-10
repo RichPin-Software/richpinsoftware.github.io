@@ -15,10 +15,16 @@ header, footer, main {
 }
 
 header {
+  height: var(--header-height);
+
   & .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  & svg {
+    height: calc(var(--header-height) / 2);
   }
 
   & svg:last-child {
@@ -27,17 +33,123 @@ header {
 }
 
 footer {
+  position: relative;
+  z-index: 1000;
+  height: var(--footer-height);
+  
   & .wrapper {
     display: flex;
     align-items: center;
+
+    & p {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 
+      'copyright content-start content-end';
+      align-items: center;
+      gap: var(--space-xs);
+
+      & svg {
+        grid-area: copyright;
+        width: var(--font-size-xs);
+      }
+
+      & small:first-child {
+        grid-area: content-start;
+      }
+
+      & small:last-child {
+        grid-area: content-end;
+      }
+
+      @media (max-width: 500px) {
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        'copyright content-start'
+        'content-end content-end';
+      }
+    }
   }
 }
 
 main {
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr;
+
+  & nav {
+    position: fixed;
+    top: var(--header-height);
+    right: 0;
+    height: 100%;
+    z-index: 1000;
+  }
 
   & .nav-links {
     display: flex;
     flex-direction: column;
+    width: 0;
+    height: 100%;
+
+    & li {
+      padding: var(--space-m);
+    }
   }
+
+  & .wrapper {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  & .card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto-fit, auto);
+    gap: var(--space-m);
+    margin: var(--space-l) 0;
+    height: fit-content;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  & .card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas:
+    'icon heading'
+    'content content';
+    gap: var(--space-m);
+    padding: var(--space-m);
+
+    & svg {
+      display: inline;
+      grid-area: icon;
+      align-self: center;
+      width: var(--font-size-l);
+    }
+
+    & h3 {
+      grid-area: heading;
+      align-self: center;
+    }
+
+    & p {
+      grid-area: content;
+      padding: var(--space-s);
+    }
+
+    @media (max-width: 500px) {
+      padding: var(--space-s);
+      gap: var(--space-s);
+    }
+  }
+}
+
+.wrapper {
+  margin-inline: auto;
+  padding: 0 var(--space-s);
+  max-width: var(--max-width-wrapper);
+  width: 100%;
 }
