@@ -22,6 +22,7 @@ body.nav-open {
 
     & li:hover {
       background-color: var(--color-shade);
+      color: var(--color-primary);
       cursor: pointer;
     }
   }
