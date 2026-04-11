@@ -40,8 +40,8 @@
   /**********************
     Color Pallete
   **********************/
-  --color-primary: rgb(64, 157, 239);
-  --color-secondary: #6c757d;
+  --color-primary: rgb(139, 187, 161);
+  --color-secondary: rgb(108, 117, 125);
   --color-dark: rgb(0, 0, 0);
   --color-secondary-dark: rgb(34, 50, 56);
   --color-light: rgb(255, 255, 255);
