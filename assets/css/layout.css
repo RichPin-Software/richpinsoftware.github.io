@@ -91,6 +91,11 @@ main {
     height: 100%;
 
     & li {
+      display: flex;
+    }
+
+    & a {
+      flex: 1;
       padding: var(--space-m);
     }
   }
