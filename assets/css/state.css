@@ -19,8 +19,8 @@ body.nav-open {
     width: 40vw;
 
     & li:hover {
-      background-color: var(--color-shade);
-      color: var(--color-primary);
+      background-color: var(--color-secondary-dark);
+      /* color: var(--color-primary); */
       cursor: pointer;
     }
   }

@@ -67,7 +67,7 @@ h3 {
   font-size: var(--font-size-m);
 }
 
-p {
+p, h6 {
   font-size: var(--font-size-s);
 }
 
